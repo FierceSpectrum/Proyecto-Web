@@ -1,0 +1,165 @@
+@font-face{
+    font-family: Fuente;
+    src: url('/Fuentes/JUST_Sans_Regular.otf');
+}
+
+
+* {
+    font-family: Fuente;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.NavCell{
+    display: none;
+}
+
+Body {
+    background-color: #1a2737;
+}
+
+.Body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.Sticky{
+    background-color: #171d25;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+@media screen and (max-width: 550px) 
+{
+    .Desktop{
+        display: none;
+    }
+    
+    .NavCell {
+    
+        display: flex;
+        box-shadow: 5px 5px 5px rgba(0, 118, 236, 0.15);
+    }
+    .NavCell .MenuHB li {
+        list-style: none;
+        border-top: 1px solid #2f3138;
+        border-bottom: 1px solid #000000;
+    }
+    
+    .NavCell .MenuHB a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 7px;
+        border-radius: 15px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .NavCell .MenuHB a:hover {
+        font-weight: bolder;
+        background-color: #253344;
+    }
+    
+    .MenuHB {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 62px;
+    }
+    
+    nav {
+        background-color: #171d25;
+        box-shadow: 5px 5px 5px rgba(0, 118, 236, 0.15);
+    }
+    
+    .Items li a:active
+    {
+        color: rgb(0, 0, 0);
+    }
+    
+    .MenuHB {
+        display: block;
+    }
+    
+    .MenuHB .checkbox {
+        position: absolute;
+        height: 32px;
+        width: 32px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+    cursor: pointer;
+    }
+    
+    .MenuHB .Menu {
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .MenuHB .Menu .line {
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #fff;
+    }
+    
+    .MenuHB .Menu .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    
+    .MenuHB .Menu .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+    
+    .MenuHB .Menu .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+    
+    .NavCell .NavItems {
+        padding-top: 120px;
+        height: 100vh;
+        width: 150%;
+        transform: translate(-150%);
+        margin-left: -50px;
+        padding-left: 50px;
+        transition: transform 0.5s ease-in-out;
+        text-align: center;
+    }
+    
+    .NavCell .NavItems li {
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+    
+    .MenuHB input[type="checkbox"]:checked ~ .NavItems {
+        transform: translateX(0);
+    }
+    
+    .MenuHB input[type="checkbox"]:checked ~ .Menu .line1 {
+        transform: rotate(45deg);
+    }
+    
+    .MenuHB input[type="checkbox"]:checked ~ .Menu .line2 {
+        transform: scaleY(0);
+        
+    }
+    
+    .MenuHB input[type="checkbox"]:checked ~ .Menu .line3 {
+        transform: rotate(-45deg);
+    }
+}
+
+
