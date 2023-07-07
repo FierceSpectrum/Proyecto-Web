@@ -11,9 +11,9 @@
     padding: 0;
 }
 
-.NavCell{
-    display: none;
-}
+                                .NavCell{
+                                    display: none;
+                                }
 
 Body {
     background-color: #1a2737;
@@ -31,6 +31,15 @@ Body {
     z-index: 100;
 }
 
+.Select{
+    background-color: #253344;
+}
+
+nav {
+    background-color: #171d25;
+    box-shadow: 5px 5px 5px rgba(0, 118, 236, 0.15);
+}
+
 @media screen and (max-width: 550px) 
 {
     .Desktop{
@@ -42,45 +51,31 @@ Body {
         display: flex;
         box-shadow: 5px 5px 5px rgba(0, 118, 236, 0.15);
     }
-    .NavCell .MenuHB li {
+    
+    .NavCell .NavItems {
+        padding-top: 120px;
+        height: 100vh;
+        width: 150%;
+        transform: translate(-150%);
+        margin-left: -50px;
+        padding-left: 50px;
+        transition: transform 0.5s ease-in-out;
+        text-align: center;
+    }
+
+    .NavCell .NavItems li {
         list-style: none;
         border-top: 1px solid #2f3138;
         border-bottom: 1px solid #000000;
+        padding: 10px;
+        font-size: 1.5rem;
     }
-    
-    .NavCell .MenuHB a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 25px;
-        font-weight: bold;
-        padding: 7px;
-        border-radius: 15px;
-        transition: background-color 0.3s ease;
-    }
-    
-    .NavCell .MenuHB a:hover {
-        font-weight: bolder;
-        background-color: #253344;
-    }
-    
+
     .MenuHB {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 62px;
-    }
-    
-    nav {
-        background-color: #171d25;
-        box-shadow: 5px 5px 5px rgba(0, 118, 236, 0.15);
-    }
-    
-    .Items li a:active
-    {
-        color: rgb(0, 0, 0);
-    }
-    
-    .MenuHB {
         display: block;
     }
     
@@ -127,23 +122,7 @@ Body {
         transform-origin: 0% 100%;
         transition: transform 0.4s ease-in-out;
     }
-    
-    .NavCell .NavItems {
-        padding-top: 120px;
-        height: 100vh;
-        width: 150%;
-        transform: translate(-150%);
-        margin-left: -50px;
-        padding-left: 50px;
-        transition: transform 0.5s ease-in-out;
-        text-align: center;
-    }
-    
-    .NavCell .NavItems li {
-        padding: 10px;
-        font-size: 1.5rem;
-    }
-    
+
     .MenuHB input[type="checkbox"]:checked ~ .NavItems {
         transform: translateX(0);
     }
@@ -160,6 +139,45 @@ Body {
     .MenuHB input[type="checkbox"]:checked ~ .Menu .line3 {
         transform: rotate(-45deg);
     }
+}
+
+/*------------------------*/
+
+.Desktop .Items{
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Desktop .Items li{
+    padding: 10px;
+}
+
+.Items a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.Items li a:hover{
+    font-weight: bolder;
+    background-color: #253344;
+}
+
+.Desktop .Items:focus{
+    background: #0000;
+    color: rebeccapurple;
+}
+
+.Items li a:active{
+
+    color: rgb(0, 0, 0);
 }
 
 
