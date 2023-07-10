@@ -1,30 +1,3 @@
-@font-face{
-    font-family: Fuente;
-    src: url('/Fuentes/JUST_Sans_Regular.otf');
-}
-
-
-* {
-    font-family: Fuente;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-                                .NavCell{
-                                    display: none;
-                                }
-
-Body {
-    background-color: #1a2737;
-    margin: 0;
-}
-
-.Body {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
 .Sticky{
     background-color: #171d25;
     position: sticky;
@@ -43,45 +16,60 @@ nav {
 
 @media screen and (max-width: 550px) 
 {
-    .Desktop{
+    .Desktop {
         display: none;
     }
-    
+        
+    /*--------- Menu --------*/
+
     .NavCell {
-    
         display: flex;
+        width: 100%;
         box-shadow: 5px 5px 5px rgba(0, 118, 236, 0.15);
     }
-    
+
     .NavCell .NavItems {
         padding-top: 120px;
         height: 100vh;
         width: 150%;
         transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
         margin-left: -50px;
         padding-left: 50px;
         transition: transform 0.5s ease-in-out;
         text-align: center;
     }
 
-    .NavCell .NavItems li {
+    .NavCell .NavItems li.M {
         list-style: none;
         border-top: 1px solid #2f3138;
         border-bottom: 1px solid #000000;
         padding: 10px;
         font-size: 1.5rem;
+        
     }
 
-    .MenuHB {
-        display: flex;
+    .NavCell .NavItems li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 7px;
+        border-radius: 15px;
+        transition: background-color 0.3s ease;
+    }
+
+    .NavCell .MenuHB {
         justify-content: space-between;
         align-items: center;
         height: 62px;
         display: block;
     }
-    
-    .MenuHB .checkbox {
+
+    .NavCell .MenuHB .checkbox {
         position: absolute;
+        display: block;
         height: 32px;
         width: 32px;
         top: 20px;
@@ -90,8 +78,8 @@ nav {
         opacity: 0;
         cursor: pointer;
     }
-    
-    .MenuHB .Menu {
+
+    .NavCell .MenuHB .Menu {
         height: 26px;
         width: 32px;
         position: absolute;
@@ -102,95 +90,97 @@ nav {
         flex-direction: column;
         justify-content: space-between;
     }
-    
-    .MenuHB .Menu .line {
+
+    .NavCell .MenuHB .Menu .line {
         height: 4px;
         width: 100%;
         border-radius: 10px;
         background: #fff;
     }
-    
-    .MenuHB .Menu .line1 {
+
+    .NavCell .MenuHB .Menu .line1 {
         transform-origin: 0% 0%;
         transition: transform 0.4s ease-in-out;
     }
-    
-    .MenuHB .Menu .line2 {
+
+    .NavCell .MenuHB .Menu .line2 {
         transition: transform 0.2s ease-in-out;
     }
-    
-    .MenuHB .Menu .line3 {
+
+    .NavCell .MenuHB .Menu .line3 {
         transform-origin: 0% 100%;
         transition: transform 0.4s ease-in-out;
     }
 
-    .MenuHB input[type="checkbox"]:checked ~ .NavItems {
+    .NavCell .MenuHB input[type="checkbox"]:checked ~ .NavItems {
         transform: translateX(0);
     }
-    
-    .MenuHB input[type="checkbox"]:checked ~ .Menu .line1 {
+
+    .NavCell .MenuHB input[type="checkbox"]:checked ~ .Menu .line1 {
         transform: rotate(45deg);
     }
-    
-    .MenuHB input[type="checkbox"]:checked ~ .Menu .line2 {
+
+    .NavCell .MenuHB input[type="checkbox"]:checked ~ .Menu .line2 {
         transform: scaleY(0);
         
     }
-    
-    .MenuHB input[type="checkbox"]:checked ~ .Menu .line3 {
+
+    .NavCell .MenuHB input[type="checkbox"]:checked ~ .Menu .line3 {
         transform: rotate(-45deg);
     }
 
-    /*------------------------*/
 
-    .text{
-        padding-top: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 60%;
-        margin: auto;
-        position: relative;
-        z-index: 2;
-        color: #ffffff;
+    .NavCell .Items li a:hover, .SubMenu:hover .BTN {
+        background-color: #111;
     }
 
-    .text h1{
-        font-size: 20px;
+    /*--------- Sub Menu --------*/
+
+    .NavCell .SubItems {
+        display: none;
+        padding-top: 10px;
+        background-color: #171d25;
+        box-shadow: -5px 5px 5px rgba(0, 118, 236, 0.15), 5px 5px 5px rgba(0, 118, 236, 0.15);
+        z-index: 1;
     }
-    
-    .text p{
-        font-size: 150%;
+
+    .NavCell .NavItems .SubItems li {
+        list-style: none;
+        border-top: 1px solid #2f3138;
+        border-bottom: 1px solid #000000;
+        padding: 10px 0px;
+        font-size: 1.5rem;
+        
     }
 
-
-
+    .NavCell .SubMenu:hover .SubItems {
+        display: block;
+    }
 }
-
-/*------------------------*/
 
 @media screen and (min-width: 550px) 
 {
-    .Desktop{
-        display: block;
+    .NavCell {
+        display: none;
     }
+        
+    /*--------- Menu --------*/
 
-
-    .Desktop .Items{
+    .Desktop .Items {
+        display: flex;
         list-style-type: none;
         margin: 0;
         padding: 5px;
-        display: flex;
         justify-content: space-around;
     }
 
-    .Desktop .Items li{
+    .Desktop .Items li {
         padding: 10px;
+        list-style-type: none;
     }
 
-    .Items a{
-        color: #fff;
+    .Desktop .Items li a{
+        color: #ffffff;
         text-decoration: none;
         font-size: 25px;
         font-weight: bold;
@@ -199,81 +189,32 @@ nav {
         transition: background-color 0.3s ease;
     }
 
-    .Items li a:hover{
-        font-weight: bolder;
-        background-color: #253344;
+    .Desktop .Items li a:hover, .SubMenu:hover .BTN{
+        background-color: #111111;
     }
 
-    .Desktop .Items:focus{
-        background: #0000;
-        color: rebeccapurple;
-    }
 
-    .Items li a:active{
+    /*--------- Sub Menu --------*/
 
-        color: rgb(0, 0, 0);
-    }
-
-    /*------------------------*/
-
-    .text{
-        padding-top: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 60%;
-        margin: auto;
-        position: relative;
-        z-index: 2;
-        color: #ffffff;
-    }
-    
-    .text h1{
-        font-size: 400%;
-    }
-    
-    .text p{
-        font-size: 400%;
-    }
-
-    .fondo{
-        width: 85%;
-        background: #000000;
+    .Desktop .SubItems {
+        display: none;
+        position: absolute;
         text-align: center;
-        opacity: 0.8;
-        border-radius: 6px;
+        margin-top: 14.5px;
+        margin-left: -10px;
+        background-color: #171d25;
+        z-index: 1;
+        border-radius: 0px 0px 12px 12px;
+        box-shadow: -5px 5px 5px rgba(0, 118, 236, 0.15), 5px 5px 5px rgba(0, 118, 236, 0.15);
     }
 
+    .Desktop .SubMenu:hover .SubItems {
+        display: block;
+    }
 
+    .Desktop .SubMenu li {
+        border-top: 1px solid #2f3138;
+        
+    }
 }
 
-
-
-/*--------------------*/
-
-.hero{
-    min-height: 100vh;
-    position: relative;
-}
-
-video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-
-.capa{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #1c1c1d;
-    opacity: 0.5;
-    mix-blend-mode: overlay;
-}

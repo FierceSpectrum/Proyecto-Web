@@ -1,0 +1,16 @@
+@font-face{
+    font-family: Fuente;
+    src: url('/Fuentes/JUST_Sans_Regular.otf');
+}
+
+* {
+    font-family: Fuente;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}  
+
+Body {
+    background-color: #1a2737;
+    margin: 0;
+}
