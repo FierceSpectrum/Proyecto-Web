@@ -6,7 +6,7 @@
 }
 
 .Select{
-    background-color: #253344;
+    background-color: #19222E;
 }
 
 nav {
@@ -38,13 +38,10 @@ nav {
         margin-left: -50px;
         padding-left: 50px;
         transition: transform 0.5s ease-in-out;
-        text-align: center;
     }
 
     .NavCell .NavItems li.M {
         list-style: none;
-        border-top: 1px solid #2f3138;
-        border-bottom: 1px solid #000000;
         padding: 10px;
         font-size: 1.5rem;
         
@@ -138,18 +135,20 @@ nav {
 
     .NavCell .SubItems {
         display: none;
+        padding-left: 10%;
         padding-top: 10px;
         background-color: #171d25;
-        box-shadow: -5px 5px 5px rgba(0, 118, 236, 0.15), 5px 5px 5px rgba(0, 118, 236, 0.15);
         z-index: 1;
     }
 
     .NavCell .NavItems .SubItems li {
         list-style: none;
-        border-top: 1px solid #2f3138;
-        border-bottom: 1px solid #000000;
         padding: 10px 0px;
         font-size: 1.5rem;
+        
+    }
+    .NavCell .NavItems .SubItems li a{
+        font-size: 90%;
         
     }
 
@@ -199,21 +198,20 @@ nav {
     .Desktop .SubItems {
         display: none;
         position: absolute;
-        text-align: center;
-        margin-top: 14.5px;
-        margin-left: -10px;
+        margin-top: 11px;
         background-color: #171d25;
         z-index: 1;
         border-radius: 0px 0px 12px 12px;
         box-shadow: -5px 5px 5px rgba(0, 118, 236, 0.15), 5px 5px 5px rgba(0, 118, 236, 0.15);
+
     }
 
     .Desktop .SubMenu:hover .SubItems {
         display: block;
     }
 
-    .Desktop .SubMenu li {
-        border-top: 1px solid #2f3138;
+    .Desktop .SubItems li a{
+        font-size: 20px;
         
     }
 }
