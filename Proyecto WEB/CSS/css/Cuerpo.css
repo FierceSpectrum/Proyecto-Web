@@ -13,4 +13,19 @@
 Body {
     background-color: #1a2737;
     margin: 0;
+    height: 50vh;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+
+
+}
+.imagenes{
+display: flex;
+margin: 2%;
+height: 450;
+width: 250;
+flex-direction: column;
+
+
 }
