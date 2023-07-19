@@ -214,5 +214,12 @@ nav {
         font-size: 20px;
         
     }
+    .post-entry a {
+        font-family: "Lustria",Sans-serif;
+        font-weight: 700;
+    }
+     .post-entry a {
+        color: #da1d29;
+    }
 }
 

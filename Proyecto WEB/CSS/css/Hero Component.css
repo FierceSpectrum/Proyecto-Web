@@ -84,37 +84,4 @@ video{
     mix-blend-mode: overlay;
 }
 
-.post-tags a {
-    border: 1px solid #da1d29;
-    border-radius: 24px;
-    background-color: #da1d29;
-    color: #050202;
-}
 
- .post-tags a {
-    font-size: 14px!important;
-}
-.post-tags a {
-    text-transform: uppercase;
-    color: #dbd5d5;
-    padding: 6px 12px 5px;
-    margin-right: 8px;
-    margin-bottom: 8px;
-    display: inline-block;
-    font-size: 11px!important;
-    background: 0 0;
-    border: 1px solid #ee0b0b;
-    transition: all .3s;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    outline: none;
-    font-weight: 400;
-    line-height: 1.2;
-}
- .post-entry a {
-    font-family: "Lustria",Sans-serif;
-    font-weight: 700;
-}
- .post-entry a {
-    color: #da1d29;
-}

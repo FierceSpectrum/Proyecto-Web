@@ -10,9 +10,12 @@
     padding: 0;
 }  
 
-Body {
-    background-color: #1a2737;
+Body{
+    background-color: #ffffff;
     margin: 0;
+}
+.Body {
+    
     height: 50vh;
     flex-direction: column;
     padding-left: 2%;
@@ -28,4 +31,31 @@ width: 250;
 flex-direction: column;
 
 
+}
+
+
+
+.post-tags a {
+    font-size: 14px!important;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 6px 12px 5px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+    font-size: 11px!important;
+    background: 0 0;
+    border: 1px solid #ee1a0b;
+    border-radius: 24px;
+    background-color: #da1d29;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    outline: none;
+    font-weight: 400;
+    line-height: 1.2;
+    
+}
+.post-tags{
+    padding-top: 1%;
 }
