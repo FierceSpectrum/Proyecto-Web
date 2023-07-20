@@ -1,6 +1,7 @@
 @font-face{
     font-family: Fuente;
     src: url('/Fuentes/JUST_Sans_Regular.otf');
+    
 }
 
 * {
@@ -21,7 +22,7 @@ Body{
     flex-direction: column;
     padding-left: 2%;
     padding-right: 2%;
-
+    font-size: 100%;
 
 }
 .imagenes{
