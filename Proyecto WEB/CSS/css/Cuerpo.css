@@ -62,3 +62,40 @@ padding: 0%;
 .post-tags{
     padding-top: 1%;
 }
+
+.Galeria {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+}  
+
+.Imagenes {
+    display: flex;
+    width: 80%;
+    height: 430px;
+}
+
+.Imagenes a{
+    display: inline-block;
+    background-color: #212121;
+}
+
+.Imagenes a{
+    width: 0px;
+    flex-grow: 1;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.Imagenes a:hover{
+    cursor: crosshair;
+    width: 50%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.Imagenes a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
