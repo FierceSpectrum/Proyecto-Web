@@ -1,6 +1,7 @@
 @font-face{
     font-family: Fuente;
-    src: url('/Fuentes/JUST_Sans_Regular.otf');
+    src: url('/Fuentes/MONOSPACE.otf');
+    
     
 }
 
@@ -15,24 +16,43 @@ Body{
     background-color: #ffffff;
     margin: 0;
     color: #242022;
+
 }
+
 .Body {
     
     height: 50vh;
     flex-direction: column;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 2rem;
+    padding-right: 2rem;
     font-size: 100%;
+    
+    
 
 }
+.Body h3, .Body h4 {
+    padding-bottom: 5px;
+}
+
 .imagenes{
 display: flex;
-margin: 2%;
-height: 450;
-width: 250;
-flex-direction: column;
-padding: 0%;
 
+height: 350;
+width: 150;
+flex-direction: column;
+
+
+
+}
+.fondo>span:before{
+    content: "";
+    width: 0;
+    height: 10px;
+    margin: 0 13px;
+    display: inline-block;
+    background: 0 0!important;
+    border-right: 1px solid;
+    opacity: .7;
 }
 
 
@@ -73,6 +93,7 @@ padding: 0%;
     display: flex;
     width: 80%;
     height: 430px;
+
 }
 
 .Imagenes a{
