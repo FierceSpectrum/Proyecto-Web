@@ -36,14 +36,27 @@ Body{
 
 .imagenes{
 display: flex;
-
 height: 350;
 width: 150;
 flex-direction: column;
 
 
-
 }
+
+
+.imagenes iframe{
+    display: flex;
+   
+    flex-direction: column;
+    
+    
+}
+
+
+
+
+
+
 .fondo>span:before{
     content: "";
     width: 0;
