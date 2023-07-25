@@ -30,27 +30,44 @@ Body{
     
 
 }
-.Body h3, .Body h4 {
+.Body h3, .Body h4, Body p{
     padding-bottom: 5px;
 }
 
-.imagenes{
+.imagenes img{
 display: flex;
-height: 350;
-width: 150;
+height: 100%;
+width: 100%;
 flex-direction: column;
 
 
 }
-
-
-.imagenes iframe{
-    display: flex;
+.video{
+    height: 200%;
+    width: 100%;
+  
    
-    flex-direction: column;
-    
-    
+ 
 }
+
+.vd{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
