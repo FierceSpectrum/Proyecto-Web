@@ -42,13 +42,29 @@ flex-direction: column;
 
 
 }
-.video{
-    height: 200%;
-    width: 100%;
-  
-   
- 
+
+
+@media screen and (max-width: 550px) 
+{
+    .video{
+        height: 100%;
+        width: 100%;
+      
+       
+     
+    }
+    
 }
+@media screen and (min-width: 550px) {
+    .video{
+        height: 200%;
+        width: 100%;
+      
+       
+     
+    }
+}
+
 
 .vd{
     height: 100%;
@@ -59,6 +75,8 @@ flex-direction: column;
     display: flex;
 
 }
+
+
 
 
 
