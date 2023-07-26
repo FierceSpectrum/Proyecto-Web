@@ -11,8 +11,18 @@
 
 nav {
     background-color: #171d25;
-    box-shadow: 5px 5px 5px rgba(0, 118, 236, 0.15);
+    box-shadow: 5px 5px 5px rgba(200, 38, 209, 0.5);
+    animation: changeColor 1.5s infinite alternate;
 }
+
+@keyframes changeColor {
+    0% {
+      box-shadow: 5px 5px 5px rgba(102, 8, 226, 0.5); /* Color inicial */
+    }
+    100% {
+      box-shadow: 5px 5px 5px rgba(200, 38, 209, 0.5); /* Color final (morado) */
+    }
+  }
 
 @media screen and (max-width: 550px) 
 {
@@ -25,7 +35,7 @@ nav {
     .NavCell {
         display: flex;
         width: 100%;
-        box-shadow: 5px 5px 5px rgba(0, 118, 236, 0.15);
+        box-shadow: 5px 5px 5px rgba(200, 38, 209, 0.15);
     }
 
     .NavCell .NavItems {

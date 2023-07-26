@@ -1,89 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/css/Navegation bar.css">
-    <link rel="stylesheet" href="../CSS/css/Hero Component.css">
-    <link rel="stylesheet" href="../CSS/css/Cuerpo.css">
-    <title>Home</title>
-</head>
-<body>
-    <header class="Sticky">
-        <div class="Desktop">
-            <nav>
-                <ul class="Items">
-                    <li><a class="Select" href="./Home.html">Home</a></li>
-                    <li class="SubMenu">
-                        <div>
-                            <a href="" class="BTN">Categories</a>
-                        </div>
-                        <div class="SubItems">
-                            <ul>
-                                <li><a href="./Shooters.html">Shooters</a></li>
-                                <li><a href="./MMORPGS.html">MMORPGS</a></li>
-                                <li><a href="./MOBAS.html">MOBAS</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="./About US.html">About US</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="NavCell">
-            <div class="MenuHB">
-                <input class="checkbox" type="checkbox"/>
-                <div class="Menu">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div> 
-                <nav class="NavItems">
-                    <ul class="Items">
-                        <li class="M"><a class="Select" href="./Home.html">Home</a></li>
-                        <li class="SubMenu M">
-                            <div>
-                                <a href="" class="BTN">Categories</a>
-                            </div>
-                            <div class="SubItems">
-                                <ul>
-                                    <li><a href="./Shooters.html">Shooters</a></li>
-                                    <li><a href="./MMORPGS.html">MMORPGS</a></li>
-                                    <li><a href="./MOBAS.html">MOBAS</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="M"><a href="./About US.html">About US</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <section class="hero">
-        <div class="text">
-            <div class="fondo">
-                <h1>Descubre</h1>
-                <p>los mejores juegos para ti</p>
-            </div>
-        </div>
-        <video autoplay muted loop poster="/Imagenes-icons/Home/HC Home Imagen.png">
-            <source src="/Imagenes-icons/Home/HC Home Video.mp4" type="Video/mp4" >
-        </video>
-        <div class="capa"></div>
-    </section>
-    <main class="Body">
-        <div class="Galeria"> 
-            <div class="Imagenes">
-                <a href=""><img src="../Imagenes-Icons/Block MMORPG/Final Fantasy XIV/HC.jpg" alt=""></a>
-                <a href="../HTML/Post/Mobas/League of legens.html"><img src="../Imagenes-Icons/Block MOBA/league of legens/HC.jpg" alt=""></a>
-                <a href="../HTML/Post/Shooters/Valorant.html"><img src="../Imagenes-Icons/block Shooters/Valorant/hC.jpg" alt=""></a>
-                <a href=""><img src="../Imagenes-Icons/Block MOBA/Dota 2/HC.jpg" alt=""></a>
-                <a href=""><img src="../Imagenes-Icons/Block MMORPG/WORLD OF WARCRAFT/hc.jpg" alt=""></a>
-            </div>
-        </div> 
-    </main>
-    <footer>
 
-    </footer>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/css/Navegation bar.css">
+  <link rel="stylesheet" href="../CSS/css/Hero Component.css">
+  <link rel="stylesheet" href="../CSS/css/Cuerpo.css">
+  <title>Home</title>
+</head>
+
+<body>
+  <header class="Sticky">
+    <div class="Desktop">
+      <nav>
+        <ul class="Items">
+          <li><a class="Select" href="./Home.html">Home</a></li>
+          <li class="SubMenu">
+            <div>
+              <a class="BTN">Categories</a>
+            </div>
+            <div class="SubItems">
+              <ul>
+                <li><a href="./Categories/Shooters.html">Shooters</a></li>
+                <li><a href="./Categories/MMORPGS.html">MMORPGS</a></li>
+                <li><a href="./Categories/MOBAS.html">MOBAS</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="./About US.html">About US</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="NavCell">
+      <div class="MenuHB">
+        <input class="checkbox" type="checkbox" />
+        <div class="Menu">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <nav class="NavItems">
+          <ul class="Items">
+            <li class="M"><a class="Select" href="./Home.html">Home</a></li>
+            <li class="SubMenu M">
+              <div>
+                <a class="BTN">Categories</a>
+              </div>
+              <div class="SubItems">
+                <ul>
+                  <li><a href="./Categories/Shooters.html">Shooters</a></li>
+                  <li><a href="./Categories/MMORPGS.html">MMORPGS</a></li>
+                  <li><a href="./Categories/MOBAS.html">MOBAS</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="M"><a href="./About US.html">About US</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="text">
+      <div class="fondo">
+        <h1>Descubre</h1>
+        <p>los mejores juegos para ti</p>
+      </div>
+    </div>
+    <video autoplay muted loop poster="/Imagenes-icons/Home/HC Home Imagen.png">
+      <source src="/Imagenes-icons/Home/HC Home Video.mp4" type="Video/mp4">
+    </video>
+    <div class="capa"></div>
+  </section>
+  <main class="Body">
+    <div class="tops">
+      <h2 class="top">Top 5</h2>
+      <div class="Galeria">
+        <div class="Imagenes">
+          <a href="../HTML/Post/MMORPGS/Final fantasy XIV.html"><img
+              src="../Imagenes-Icons/Block MMORPG/Final Fantasy XIV/HC.jpg" alt=""></a>
+          <a href="../HTML/Post/Mobas/League of legens.html"><img
+              src="../Imagenes-Icons/Block MOBA/league of legens/HC.jpg" alt=""></a>
+          <a href="../HTML/Post/Shooters/Valorant.html"><img src="../Imagenes-Icons/block Shooters/Valorant/hC.jpg"
+              alt=""></a>
+          <a href="../HTML/Post/MMORPGS/World of warcraft.html"><img
+              src="../Imagenes-Icons/Block MMORPG/WORLD OF WARCRAFT/hc.jpg" alt=""></a>
+          <a href="../HTML/Post/MMORPGS/GUILD WARS 2.html"><img src="../Imagenes-Icons/Block MMORPG/GUILD WARS 2/HC.jpg"
+              alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="Juegos">
+      <h2>Juegos</h2>
+      <div class="Categories">
+        <a href="./Categories/MMORPGS.html">
+          <div class="categorie MMORPG">
+            <h3>MMORPG</h3>
+            <button></button>
+          </div>
+        </a>
+        <a href="./Categories/MOBAS.html">
+          <div class="categorie Moba">
+            <h3>MOBA</h3>
+            <button></button>
+          </div>
+        </a>
+        <a href="./Categories/Shooters.html">
+          <div class="categorie Shooter">
+            <h3>Shooter</h3>
+            <button></button>
+          </div>
+        </a>
+      </div>
+      <div class="container ">
+        <div class="card MMORPG FF">
+          <h2>Final Fantasy</h2>
+          <p>2010<br>Final Fantasy XIV es un MMORPG desarrollado y publicado por Square Enix.</p>
+          <span>Hover here</span>
+          <div class="pic"></div>
+          <a href="./Post/MMORPGS/Final fantasy XIV.html">
+            <button></button>
+          </a>
+        </div>
+        <div class="card MMORPG GW">
+          <h2>Guild Wars2</h2>
+          <p>2009<br>Guild Wars 2 es un MMORPG desarrollado por ArenaNet.</p>
+          <span>Hover here</span>
+          <div class="pic"></div>
+          <a href="./Post/MMORPGS/GUILD WARS 2.html">
+            <button></button>
+          </a>
+        </div>
+        <div class="card MMORPG LK">
+          <h2>Lost Ark</h2>
+          <p>2019<br>Lost Ark es un MMORPG desarrollado conjuntamente por Tripod Studio y Smilegate.</p>
+          <span>Hover here</span>
+          <div class="pic"></div>
+          <a href="./Post/MMORPGS/LOST ARK.html">
+            <button></button>
+          </a>
+        </div>
+        <div class="card MMORPG WOW">
+          <h2>WoW</h2>
+          <p>2004<br>World of Warcraft es un MMORPG desarrollado por Blizzard Entertainment.</p>
+          <span>Hover here</span>
+          <div class="pic"></div>
+          <a href="./Post/MMORPGS/World of warcraft.html">
+            <button></button>
+          </a>
+        </div>
+        <div class="card Moba DT2">
+          <h2>Dota 2</h2>
+          <p>2013<br>Dota 2 es un MOBA desarrollado por la empresa Valve Corporation.</p>
+          <span>Hover here</span>
+          <div class="pic"></div>
+          <a href="./Post/Mobas/DOTA 2.html">
+            <button></button>
+          </a>
+        </div>
+        <div class="card Moba HOS">
+          <h2>HOS</h2>
+          <p>2015<br>Heroes of the Storm es un MOBA desarrollado por la empresa Blizzard Entertainment </p>
+          <span>Hover here</span>
+          <div class="pic"></div>
+          <a href="./Post/Mobas/Heroes of the storm.html">
+            <button></button>
+          </a>
+        </div>
+        <div class="card Moba LOL">
+          <h2>LOL</h2>
+          <p>2009<br>League of Legends es un MOBA desarrollado por Riot Games.</p>
+          <span>Hover here</span>
+          <div class="pic"></div>
+          <a href="./Post/Mobas/League of legens.html">
+            <button></button>
+          </a>
+        </div>
+        <div class="card Moba ST">
+          <h2>SMITE</h2>
+          <p>2012<br>SMITE es un MOBA creado y publicado por Hi-Rez Studios.</p>
+          <span>Hover here</span>
+          <div class="pic"></div>
+          <a href="./Post/Mobas/SMITE.html">
+            <button></button>
+          </a>
+        </div>
+        <div class="card Shooter COD">
+          <h2>COD</h2>
+          <p>2012<br>Call of Duty: Black Ops II es un Shooter desarrollado por Treyarch y distribuido por Activision.
+          </p>
+          <span>Hover here</span>
+          <div class="pic"></div>
+          <a href="./Post/Shooters/Call of dury.html">
+            <button></button>
+          </a>
+        </div>
+        <div class="card Shooter FT">
+          <h2>Fornite</h2>
+          <p>2017<br>Fortnite es un Shooter desarrollado por Epic Games.</p>
+          <span>Hover here</span>
+          <div class="pic"></div>
+          <a href="./Post/Shooters/Fornite.html">
+            <button></button>
+          </a>
+        </div>
+        <div class="card Shooter OVW">
+          <h2>Overwatch</h2>
+          <p>2016<br>Overwatch fue un Shooter desarrollado por Blizzard Entertainment.</p>
+          <span>Hover here</span>
+          <div class="pic"></div>
+          <a href="./Post/Shooters/overwatch.html">
+            <button></button>
+          </a>
+        </div>
+        <div class="card Shooter VAL">
+          <h2>Valorant</h2>
+          <p>2020<br>Valorant es un Shooter desarrollado por Riot Games</p>
+          <span>Hover here</span>
+          <div class="pic"></div>
+          <a href="./Post/Shooters/Valorant.html">
+            <button></button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
