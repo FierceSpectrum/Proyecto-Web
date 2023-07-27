@@ -179,7 +179,7 @@ Body {
             text-shadow: 0 0 15px $color-background;
         }
 
-        button {
+        .button {
             position: relative;
             top: 10px;
             width: 20px;
@@ -194,19 +194,19 @@ Body {
     }
 
     .MMORPG {
-        button {
+        .button {
             background-color: $color-MMORPG;
         }
     }
 
     .Moba {
-        button {
+        .button {
             background-color: $color-MOBA;
         }
     }
 
     .Shooter {
-        button {
+        .button {
             background-color: $color-Shooter;
         }
     }
@@ -277,7 +277,7 @@ Body {
                 transition: 0.3s ease;
             }
 
-            button {
+            .button {
                 position: absolute;
                 right: 25px;
                 bottom: 25px;
@@ -343,6 +343,7 @@ Body {
             }
 
             span {
+                pointer-events: none;
                 z-index: 99;
                 position: absolute;
                 top: 60px;
@@ -365,7 +366,7 @@ Body {
                 transition: 0.3s ease;
             }
 
-            button {
+            .button {
                 position: absolute;
                 right: 30px;
                 bottom: 40px;
@@ -400,7 +401,7 @@ Body {
                     width: 470px;
                 }
 
-                button {
+                .button {
                     transform: scale(16.5);
                     opacity: 0.5;
                 }
@@ -484,19 +485,19 @@ Body {
     }
 
     .MMORPG {
-        button {
+        .button {
             background-color: #e9300f;
         }
     }
 
     .Moba {
-        button {
+        .button {
             background-color: $color-MOBA;
         }
     }
 
     .Shooter {
-        button {
+        .button {
             background-color: $color-Shooter;
         }
     }

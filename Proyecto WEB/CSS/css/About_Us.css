@@ -1,0 +1,201 @@
+.bloque {
+  padding-top: 2rem;
+  padding-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .bloque .texto {
+    width: 100%;
+    padding-bottom: 1.5%; }
+
+.Dev .about {
+  width: 100%;
+  padding-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  @media screen and (max-width: 550px) {
+    .Dev .about .card {
+      position: relative;
+      width: 350px;
+      height: 220px;
+      padding: 15px;
+      background: linear-gradient(60deg, #111111 0%, #19222E 100%);
+      overflow: hidden;
+      margin-bottom: 15px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); }
+      .Dev .about .card h2 {
+        z-index: 99;
+        position: absolute;
+        bottom: 110px;
+        right: 70px;
+        font-size: 40px;
+        font-weight: 700;
+        color: #fff;
+        pointer-events: none;
+        transition: 0.2s ease;
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.7); }
+      .Dev .about .card p {
+        z-index: 99;
+        position: absolute;
+        bottom: 15px;
+        right: 65px;
+        width: 180px;
+        color: #fff;
+        pointer-events: none;
+        font-size: 13px;
+        text-align: right;
+        letter-spacing: 1px;
+        transition: 0.2s ease; }
+      .Dev .about .card span {
+        pointer-events: none;
+        display: none; }
+      .Dev .about .card .Redes {
+        z-index: 99;
+        position: absolute;
+        right: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        opacity: 1;
+        bottom: 20px;
+        transition: 0.3s ease; }
+        .Dev .about .card .Redes img {
+          width: 30px;
+          height: 30px;
+          border: none;
+          cursor: pointer;
+          border-radius: 30px; }
+      .Dev .about .card .pic {
+        z-index: 100;
+        width: 230px;
+        background-size: cover;
+        border-radius: 12px;
+        filter: grayscale(0%);
+        opacity: 0.8;
+        transition: 0.3s ease; }
+        .Dev .about .card .pic img {
+          width: 100%;
+          border-radius: 15px;
+          height: 190px; }
+      .Dev .about .card .color {
+        position: absolute;
+        right: 10px;
+        bottom: 40px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 30px;
+        outline: none;
+        transform: scale(15.5);
+        opacity: 0.7; }
+      .Dev .about .card .carmesi {
+        background-color: #790113; }
+      .Dev .about .card .violeta {
+        background-color: #5f08b6; } }
+  @media screen and (min-width: 550px) {
+    .Dev .about .card {
+      position: relative;
+      width: 500px;
+      height: 400px;
+      padding: 15px;
+      background: linear-gradient(60deg, #111111 0%, #19222E 100%);
+      overflow: hidden;
+      margin-bottom: 15px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); }
+      .Dev .about .card h2 {
+        z-index: 99;
+        position: absolute;
+        bottom: 30px;
+        right: 105px;
+        font-size: 50px;
+        font-weight: 700;
+        color: #fff;
+        pointer-events: none;
+        transition: 0.2s ease;
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.7); }
+      .Dev .about .card p {
+        z-index: 99;
+        position: absolute;
+        bottom: 30px;
+        right: 105px;
+        width: 220px;
+        color: #fff;
+        pointer-events: none;
+        opacity: 0;
+        font-size: 15px;
+        text-align: right;
+        letter-spacing: 1px;
+        transition: 0.2s ease; }
+      .Dev .about .card span {
+        pointer-events: none;
+        z-index: 99;
+        position: absolute;
+        top: 60px;
+        right: 35px;
+        color: #fff;
+        font-size: 12px;
+        letter-spacing: 1px;
+        writing-mode: vertical-lr;
+        transition: 0.2s ease;
+        opacity: 0.7; }
+      .Dev .about .card .Redes {
+        opacity: 0;
+        z-index: 99;
+        position: absolute;
+        bottom: 10px;
+        right: 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+        transition: 0.3s ease; }
+        .Dev .about .card .Redes img {
+          width: 30px;
+          height: 30px;
+          border: none;
+          cursor: pointer;
+          border-radius: 30px; }
+      .Dev .about .card .pic {
+        z-index: 100;
+        width: 395px;
+        background-size: cover;
+        border-radius: 12px;
+        filter: grayscale(100%);
+        transition: 0.3s ease; }
+        .Dev .about .card .pic img {
+          width: 100%;
+          border-radius: 30px;
+          height: 370px; }
+      .Dev .about .card .color {
+        position: absolute;
+        right: 30px;
+        bottom: 40px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 30px;
+        outline: none;
+        opacity: 1;
+        transition: 0.3s ease;
+        background-color: #e9300f; }
+      .Dev .about .card:hover h2 {
+        bottom: 135px; }
+      .Dev .about .card:hover p {
+        opacity: 1; }
+      .Dev .about .card:hover span {
+        opacity: 0;
+        top: 80px; }
+      .Dev .about .card:hover .pic {
+        filter: grayscale(0%); }
+      .Dev .about .card:hover .Redes {
+        opacity: 1;
+        bottom: 90px; }
+      .Dev .about .card:hover .color {
+        transform: scale(25.5);
+        opacity: 0.5; }
+      .Dev .about .card .carmesi {
+        background-color: #790113; }
+      .Dev .about .card .violeta {
+        background-color: #8000FF; } }

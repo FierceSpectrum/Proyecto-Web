@@ -129,7 +129,7 @@ Body {
       pointer-events: none;
       transition: 0.2s ease;
       text-shadow: 0 0 15px rgba(0, 0, 0, 0.7); }
-    .Categories .categorie button {
+    .Categories .categorie .button {
       position: relative;
       top: 10px;
       width: 20px;
@@ -140,11 +140,11 @@ Body {
       outline: none;
       transform: scale(500%);
       opacity: 0.5; }
-  .Categories .MMORPG button {
+  .Categories .MMORPG .button {
     background-color: #e9300f; }
-  .Categories .Moba button {
+  .Categories .Moba .button {
     background-color: #0e61dd; }
-  .Categories .Shooter button {
+  .Categories .Shooter .button {
     background-color: #0fe633; }
 
 @media screen and (max-width: 550px) {
@@ -200,7 +200,7 @@ Body {
         background-size: cover;
         border-radius: 12px;
         transition: 0.3s ease; }
-      .container .card button {
+      .container .card .button {
         position: absolute;
         right: 25px;
         bottom: 25px;
@@ -256,6 +256,7 @@ Body {
         letter-spacing: 1px;
         transition: 0.2s ease; }
       .container .card span {
+        pointer-events: none;
         z-index: 99;
         position: absolute;
         top: 60px;
@@ -274,7 +275,7 @@ Body {
         border-radius: 12px;
         filter: grayscale(100%);
         transition: 0.3s ease; }
-      .container .card button {
+      .container .card .button {
         position: absolute;
         right: 30px;
         bottom: 40px;
@@ -298,51 +299,51 @@ Body {
       .container .card:hover .pic {
         filter: grayscale(0%);
         width: 470px; }
-      .container .card:hover button {
+      .container .card:hover .button {
         transform: scale(16.5);
         opacity: 0.5; } }
 
 .container .FF .pic {
-  background-image: url("../../Imagenes-Icons/Block MMORPG/Final Fantasy XIV/HC.jpg"); }
+  background-image: url("../../Imagenes-Icons/Block_MMORPG/Final_Fantasy_XIV/HC.jpg"); }
 
 .container .GW .pic {
-  background-image: url("../../Imagenes-Icons/Block MMORPG/GUILD WARS 2/HC.jpg"); }
+  background-image: url("../../Imagenes-Icons/Block_MMORPG/GUILD_WARS_2/HC.jpg"); }
 
 .container .LK .pic {
-  background-image: url("../../Imagenes-Icons/Block MMORPG/Lost ark/HC.jpg"); }
+  background-image: url("../../Imagenes-Icons/Block_MMORPG/Lost_ark/HC.jpg"); }
 
 .container .WOW .pic {
-  background-image: url("../../Imagenes-Icons/Block MMORPG/WORLD OF WARCRAFT/hc.jpg"); }
+  background-image: url("../../Imagenes-Icons/Block_MMORPG/WORLD_OF_WARCRAFT/hc.jpg"); }
 
 .container .DT2 .pic {
-  background-image: url("../../Imagenes-Icons/Block MOBA/Dota 2/HC.jpg"); }
+  background-image: url("../../Imagenes-Icons/Block_MOBA/Dota_2/HC.jpg"); }
 
 .container .HOS .pic {
-  background-image: url("../../Imagenes-Icons/Block MOBA/Heroes of the storm/HC.jpg"); }
+  background-image: url("../../Imagenes-Icons/Block_MOBA/Heroes_of_the_storm/HC.jpg"); }
 
 .container .LOL .pic {
-  background-image: url("../../Imagenes-Icons/Block MOBA/league of legens/HC.jpg"); }
+  background-image: url("../../Imagenes-Icons/Block_MOBA/league_of_legens/HC.jpg"); }
 
 .container .ST .pic {
-  background-image: url("../../Imagenes-Icons/Block MOBA/Smite/HC.jpg"); }
+  background-image: url("../../Imagenes-Icons/Block_MOBA/Smite/HC.jpg"); }
 
 .container .COD .pic {
-  background-image: url("../../Imagenes-Icons/block Shooters/Black ops/HC.jpg"); }
+  background-image: url("../../Imagenes-Icons/block_Shooters/Black_ops/HC.jpg"); }
 
 .container .FT .pic {
-  background-image: url("../../Imagenes-Icons/block Shooters/Imagenes fornite/hc.jpg"); }
+  background-image: url("../../Imagenes-Icons/block_Shooters/Imagenes_fornite/hc.jpg"); }
 
 .container .OVW .pic {
-  background-image: url("../../Imagenes-Icons/block Shooters/Overwatch/HC.jpg"); }
+  background-image: url("../../Imagenes-Icons/block_Shooters/Overwatch/HC.jpg"); }
 
 .container .VAL .pic {
-  background-image: url("../../Imagenes-Icons/block Shooters/Valorant/hC.jpg"); }
+  background-image: url("../../Imagenes-Icons/block_Shooters/Valorant/hC.jpg"); }
 
-.container .MMORPG button {
+.container .MMORPG .button {
   background-color: #e9300f; }
 
-.container .Moba button {
+.container .Moba .button {
   background-color: #0e61dd; }
 
-.container .Shooter button {
+.container .Shooter .button {
   background-color: #0fe633; }
