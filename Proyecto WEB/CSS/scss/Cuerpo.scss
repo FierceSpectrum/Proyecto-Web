@@ -1,0 +1,503 @@
+@import 'Colores';
+@import 'Imagenes';
+
+@font-face {
+    font-family: Fuente;
+    src: url('/Fuentes/MONOSPACE.otf');
+}
+
+* {
+    font-family: Fuente;
+    box-sizing: border-box;
+}
+
+Body {
+    background-color: $color-primario;
+    color: #f1eff0;
+}
+
+.Body {
+    flex-direction: column;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 100%;
+
+    h3,
+    h4,
+    p {
+        margin: 0;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 80px;
+}
+
+
+.bloque {
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .texto {
+        width: 100%;
+        padding-bottom: 1.5%;
+    }
+
+    .imagenes {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .video {
+        position: relative;
+        width: 100%;
+        padding-top: 56.2%;
+        overflow: hidden;
+
+        .vd {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.post-tags {
+    padding-top: 1%;
+
+    a {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $color-secundario;
+        padding: 6px 12px 5px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        display: inline-block;
+        font-size: 11px;
+        background: 0 0;
+        border: 1px solid $color-secundario;
+        border-radius: 24px;
+        background-color: $color-primario;
+
+
+        outline: none;
+        font-weight: 400;
+        line-height: 1.2;
+        text-decoration: none;
+    }
+
+}
+
+.Galeria {
+    display: flex;
+    justify-content: center;
+
+    .Imagenes {
+        display: flex;
+        width: 80%;
+        height: 430px;
+
+        a {
+            display: inline-block;
+            background-color: #000000;
+            width: 0px;
+            flex-grow: 1;
+            opacity: .8;
+            transition: .5s ease;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &:hover {
+                cursor: crosshair;
+                width: 50%;
+                opacity: 1;
+                filter: contrast(120%);
+            }
+        }
+
+    }
+}
+
+.Juegos {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-size: 60px;
+        text-align: center;
+
+    }
+}
+
+.Categories {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    a {
+        text-decoration: none;
+    }
+
+    .categorie {
+        display: flex;
+        position: relative;
+        padding: 15px;
+        background: linear-gradient(60deg, $color-primario 0%, $color-nav-select 100%);
+        overflow: hidden;
+        margin-bottom: 15px;
+        border-radius: 20px;
+        box-shadow: 0 0 15px $color-background;
+
+        h3 {
+            z-index: 99;
+            color: #fff;
+            pointer-events: none;
+            transition: 0.2s ease;
+            text-shadow: 0 0 15px $color-background;
+        }
+
+        button {
+            position: relative;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            outline: none;
+            transform: scale(500%);
+            opacity: 0.5;
+        }
+    }
+
+    .MMORPG {
+        button {
+            background-color: $color-MMORPG;
+        }
+    }
+
+    .Moba {
+        button {
+            background-color: $color-MOBA;
+        }
+    }
+
+    .Shooter {
+        button {
+            background-color: $color-Shooter;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .tops {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        padding-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .card {
+            position: relative;
+            width: 300px;
+            height: 170px;
+            padding: 13px;
+            background: linear-gradient(60deg, $color-primario 0%, $color-nav-select 100%);
+            overflow: hidden;
+            margin-bottom: 15px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px $color-background;
+
+            h2 {
+                z-index: 99;
+                position: absolute;
+                bottom: 80px;
+                right: 30px;
+                font-size: 36px;
+                font-weight: 700;
+                color: $color-secundario;
+                pointer-events: none;
+                transition: 0.2s ease;
+                text-shadow: 0 0 15px $color-background;
+            }
+
+            p {
+                z-index: 99;
+                position: absolute;
+                bottom: 20px;
+                right: 25px;
+                width: 190px;
+                color: $color-secundario;
+                pointer-events: none;
+                font-size: 14px;
+                text-align: right;
+                letter-spacing: 1px;
+                transition: 0.2s ease;
+                opacity: 1;
+            }
+
+            span {
+                display: none;
+            }
+
+            .pic {
+                z-index: 100;
+                width: 275px;
+                height: 145px;
+                background-size: cover;
+                border-radius: 12px;
+                transition: 0.3s ease;
+            }
+
+            button {
+                position: absolute;
+                right: 25px;
+                bottom: 25px;
+                width: 20px;
+                height: 20px;
+                border: none;
+                border-radius: 30px;
+                cursor: pointer;
+                outline: none;
+                transform: scale(18.5);
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        padding-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .card {
+            position: relative;
+            width: 500px;
+            height: 230px;
+            padding: 15px;
+            background: linear-gradient(60deg, $color-primario 0%, $color-nav-select 100%);
+            overflow: hidden;
+            margin-bottom: 15px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px $color-background;
+
+            h2 {
+                z-index: 99;
+                position: absolute;
+                bottom: 25px;
+                right: 130px;
+                font-size: 50px;
+                font-weight: 700;
+                color: #fff;
+                pointer-events: none;
+                transition: 0.2s ease;
+                text-shadow: 0 0 15px $color-background;
+            }
+
+            p {
+                z-index: 99;
+                position: absolute;
+                bottom: 30px;
+                right: 130px;
+                width: 200px;
+                color: #fff;
+                pointer-events: none;
+                opacity: 0;
+                font-size: 12px;
+                text-align: right;
+                letter-spacing: 1px;
+                transition: 0.2s ease;
+            }
+
+            span {
+                z-index: 99;
+                position: absolute;
+                top: 60px;
+                right: 35px;
+                color: #fff;
+                font-size: 12px;
+                letter-spacing: 1px;
+                writing-mode: vertical-lr;
+                transition: 0.2s ease;
+                opacity: 0.7;
+            }
+
+            .pic {
+                z-index: 100;
+                width: 395px;
+                height: 200px;
+                background-size: cover;
+                border-radius: 12px;
+                filter: grayscale(100%);
+                transition: 0.3s ease;
+            }
+
+            button {
+                position: absolute;
+                right: 30px;
+                bottom: 40px;
+                width: 30px;
+                height: 30px;
+                border: none;
+                border-radius: 30px;
+                cursor: pointer;
+                outline: none;
+                opacity: 1;
+                transition: 0.3s ease;
+            }
+
+            &:hover {
+                h2 {
+                    bottom: 90px;
+                    right: 50px;
+                }
+
+                p {
+                    opacity: 1;
+                    right: 60px;
+                }
+
+                span {
+                    opacity: 0;
+                    top: 80px;
+                }
+
+                .pic {
+                    filter: grayscale(0%);
+                    width: 470px;
+                }
+
+                button {
+                    transform: scale(16.5);
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+.container {
+
+    .FF {
+        .pic {
+            background-image: url($MMORPG-hc1);
+        }
+    }
+
+    .GW {
+        .pic {
+            background-image: url($MMORPG-hc2);
+        }
+    }
+
+    .LK {
+        .pic {
+            background-image: url($MMORPG-hc3);
+        }
+    }
+
+    .WOW {
+        .pic {
+            background-image: url($MMORPG-hc4);
+        }
+    }
+
+    .DT2 {
+        .pic {
+            background-image: url($MOBA-hc1);
+        }
+    }
+
+    .HOS {
+        .pic {
+            background-image: url($MOBA-hc2);
+        }
+    }
+
+    .LOL {
+        .pic {
+            background-image: url($MOBA-hc3);
+        }
+    }
+
+    .ST {
+        .pic {
+            background-image: url($MOBA-hc4);
+        }
+    }
+
+    .COD {
+        .pic {
+            background-image: url($Shooter-hc1);
+        }
+    }
+
+    .FT {
+        .pic {
+            background-image: url($Shooter-hc2);
+        }
+    }
+
+    .OVW {
+        .pic {
+            background-image: url($Shooter-hc3);
+        }
+    }
+
+    .VAL {
+        .pic {
+            background-image: url($Shooter-hc4);
+        }
+    }
+
+    .MMORPG {
+        button {
+            background-color: #e9300f;
+        }
+    }
+
+    .Moba {
+        button {
+            background-color: $color-MOBA;
+        }
+    }
+
+    .Shooter {
+        button {
+            background-color: $color-Shooter;
+        }
+    }
+}

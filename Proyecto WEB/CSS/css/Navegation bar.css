@@ -1,70 +1,50 @@
-.Sticky{
+.Sticky {
     background-color: #171d25;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-.Select{
+.Select {
     background-color: #19222E;
 }
 
 nav {
     background-color: #171d25;
-    box-shadow: 5px 5px 5px rgba(200, 38, 209, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
     animation: changeColor 1.5s infinite alternate;
 }
 
 @keyframes changeColor {
     0% {
-      box-shadow: 5px 5px 5px rgba(102, 8, 226, 0.5); /* Color inicial */
+        box-shadow: 5px 5px 5px rgba(102, 8, 226, 0.5);
     }
-    100% {
-      box-shadow: 5px 5px 5px rgba(200, 38, 209, 0.5); /* Color final (morado) */
-    }
-  }
 
-@media screen and (max-width: 550px) 
-{
+    100% {
+        box-shadow: 5px 5px 5px rgba(200, 38, 209, 0.5);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    @keyframes changeColor2 {
+        0% {
+            box-shadow: 0px 5px 5px rgba(102, 8, 226, 0.5);
+        }
+
+        100% {
+            box-shadow: 0px 5px 5px rgba(200, 38, 209, 0.5);
+        }
+    }
+
     .Desktop {
         display: none;
     }
-        
-    /*--------- Menu --------*/
 
     .NavCell {
         display: flex;
         width: 100%;
-        box-shadow: 5px 5px 5px rgba(200, 38, 209, 0.15);
-    }
-
-    .NavCell .NavItems {
-        padding-top: 120px;
-        height: 100vh;
-        width: 150%;
-        transform: translate(-150%);
-        display: flex;
-        flex-direction: column;
-        margin-left: -50px;
-        padding-left: 50px;
-        transition: transform 0.5s ease-in-out;
-    }
-
-    .NavCell .NavItems li.M {
-        list-style: none;
-        padding: 10px;
-        font-size: 1.5rem;
-        
-    }
-
-    .NavCell .NavItems li a {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 25px;
-        font-weight: bold;
-        padding: 7px;
-        border-radius: 15px;
-        transition: background-color 0.3s ease;
+        box-shadow: 5px 5px 5px rgba(200, 38, 209, 0.5);
+        animation: changeColor2 1.5s infinite alternate;
     }
 
     .NavCell .MenuHB {
@@ -102,7 +82,7 @@ nav {
         height: 4px;
         width: 100%;
         border-radius: 10px;
-        background: #fff;
+        background: #ffffff;
     }
 
     .NavCell .MenuHB .Menu .line1 {
@@ -119,31 +99,60 @@ nav {
         transition: transform 0.4s ease-in-out;
     }
 
-    .NavCell .MenuHB input[type="checkbox"]:checked ~ .NavItems {
+    .NavCell .MenuHB input[type="checkbox"]:checked~.NavItems {
         transform: translateX(0);
     }
 
-    .NavCell .MenuHB input[type="checkbox"]:checked ~ .Menu .line1 {
+    .NavCell .MenuHB input[type="checkbox"]:checked~.Menu .line1 {
         transform: rotate(45deg);
     }
 
-    .NavCell .MenuHB input[type="checkbox"]:checked ~ .Menu .line2 {
+    .NavCell .MenuHB input[type="checkbox"]:checked~.Menu .line2 {
         transform: scaleY(0);
-        
     }
 
-    .NavCell .MenuHB input[type="checkbox"]:checked ~ .Menu .line3 {
+    .NavCell .MenuHB input[type="checkbox"]:checked~.Menu .line3 {
         transform: rotate(-45deg);
     }
 
-
-    .NavCell .Items li a:hover, .SubMenu:hover .BTN {
-        background-color: #111;
+    .NavCell .MenuHB .NavItems {
+        padding-top: 120px;
+        height: 100vh;
+        width: 150%;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -50px;
+        padding-left: 50px;
+        transition: transform 0.5s ease-in-out;
     }
 
-    /*--------- Sub Menu --------*/
+    .NavCell .MenuHB .NavItems .Items li a:hover,
+    .NavCell .MenuHB .NavItems .SubMenu:hover .BTN {
+        background-color: #111111;
+    }
 
-    .NavCell .SubItems {
+    .NavCell .MenuHB .NavItems .Items li.M {
+        list-style: none;
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    .NavCell .MenuHB .NavItems .Items li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 7px;
+        border-radius: 15px;
+        transition: background-color 0.3s ease;
+    }
+
+    .NavCell .MenuHB .NavItems .Items .SubMenu:hover .SubItems {
+        display: block;
+    }
+
+    .NavCell .MenuHB .NavItems .Items .SubMenu .SubItems {
         display: none;
         padding-left: 10%;
         padding-top: 10px;
@@ -151,29 +160,31 @@ nav {
         z-index: 1;
     }
 
-    .NavCell .NavItems .SubItems li {
+    .NavCell .MenuHB .NavItems .Items .SubMenu .SubItems li {
         list-style: none;
         padding: 10px 0px;
         font-size: 1.5rem;
-        
-    }
-    .NavCell .NavItems .SubItems li a{
-        font-size: 90%;
-        
     }
 
-    .NavCell .SubMenu:hover .SubItems {
-        display: block;
+    .NavCell .MenuHB .NavItems .Items .SubMenu .SubItems li a {
+        font-size: 90%;
     }
 }
 
-@media screen and (min-width: 550px) 
-{
+@media screen and (min-width: 550px) {
+    @keyframes changeColor3 {
+        0% {
+            box-shadow: -5px 5px 5px rgba(102, 8, 226, 0.5), 5px 5px 5px rgba(102, 8, 226, 0.5);
+        }
+
+        100% {
+            box-shadow: -5px 5px 5px rgba(200, 38, 209, 0.5), 5px 5px 5px rgba(200, 38, 209, 0.5);
+        }
+    }
+
     .NavCell {
         display: none;
     }
-        
-    /*--------- Menu --------*/
 
     .Desktop .Items {
         display: flex;
@@ -188,7 +199,7 @@ nav {
         list-style-type: none;
     }
 
-    .Desktop .Items li a{
+    .Desktop .Items li a {
         color: #ffffff;
         text-decoration: none;
         font-size: 25px;
@@ -198,38 +209,27 @@ nav {
         transition: background-color 0.3s ease;
     }
 
-    .Desktop .Items li a:hover, .SubMenu:hover .BTN{
+    .Desktop .Items li a:hover,
+    .Desktop .Items li a .SubMenu:hover .BTN {
         background-color: #111111;
     }
 
+    .Desktop .Items .SubMenu:hover .SubItems {
+        display: block;
+    }
 
-    /*--------- Sub Menu --------*/
-
-    .Desktop .SubItems {
+    .Desktop .Items .SubMenu .SubItems {
         display: none;
         position: absolute;
         margin-top: 11px;
         background-color: #171d25;
         z-index: 1;
         border-radius: 0px 0px 12px 12px;
-        box-shadow: -5px 5px 5px rgba(0, 118, 236, 0.15), 5px 5px 5px rgba(0, 118, 236, 0.15);
-
+        box-shadow: -5px 5px 5px rgba(200, 38, 209, 0.5), 5px 5px 5px rgba(200, 38, 209, 0.5);
+        animation: changeColor3 1.5s infinite alternate;
     }
 
-    .Desktop .SubMenu:hover .SubItems {
-        display: block;
-    }
-
-    .Desktop .SubItems li a{
+    .Desktop .Items .SubMenu .SubItems li a {
         font-size: 20px;
-        
-    }
-    .post-entry a {
-        font-family: "Lustria",Sans-serif;
-        font-weight: 700;
-    }
-     .post-entry a {
-        color: #da1d29;
     }
 }
-
